@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Marck Script", sans-serif;
+  -webkit-animation: show 1s;
+          animation: show 1s;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.app {
+  min-height: 345px;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__playerList {
+  list-style-type: none;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.app__player {
+  text-align: end;
+  font-family: "Marck Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.app__title {
+  font-family: "Marck Script";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  text-align: center;
+}
+
+.app__logintitle, .app__lobbytitle, .app__gametitle, .app__playerLIstTitle {
+  font-family: "Marck Script";
+  color: black;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.app__input {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  font-family: "Marck Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  border: 2px #e3e0fd solid;
+  text-align: center;
+  -webkit-box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.app__input:focus {
+  outline: none;
+  border: 2px #6c5df7 solid;
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.app__button {
+  width: 234px;
+  height: 48px;
+  background: #2515fc;
+  border-radius: 30px;
+  border: none;
+  font-family: "Marck Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5), 6px 6px 10px rgba(0, 0, 0, 0.5);
+  outline: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.app__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1830px) {
+  .app {
+    padding: 32px;
+    gap: 16px;
+    background-image: url(../images/back-tablet.png);
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .app {
+    background-position-y: 95px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .app {
+    background-position-y: 150px;
+    background-image: url(../images/back-mobile.png);
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .app {
+    min-height: 500px;
+    background-position-y: 332px;
+    background-position-x: right;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app {
+    min-height: 550px;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+  .app__playerLIstTitle {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

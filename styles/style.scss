@@ -1,0 +1,140 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family, sans-serif;
+    animation: show 1s;
+}
+body {
+    background-color: rgb(247, 247, 247);
+}
+.app {
+    min-height: 345px;
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    &__playerList {
+        list-style-type: none;
+        animation-name: none;
+    }
+    &__player {
+        text-align: end;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        animation-name: none;
+    }
+    &__title {
+        font-family: $font-family;
+        color: $color-dark;
+        font-size: 32px;
+    
+        text-align: center;
+    }
+    &__logintitle,
+    &__lobbytitle,
+    &__gametitle,
+    &__playerLIstTitle {
+        font-family: $font-family;
+        color: black;
+        font-size: 48px;
+        text-align: center;
+        text-shadow: 16px 16px 10px $color-dark, 6px 6px 10px $color-dark;
+    }
+    &__input {
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        border: none;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        border: 2px rgb(227, 224, 253) solid;
+        text-align: center;
+        box-shadow: 16px 16px 10px $color-dark, 6px 6px 10px $color-dark;
+    }
+    &__input:focus {
+        outline: none;
+        border: 2px rgb(108, 93, 247) solid;
+        box-shadow: 6px 6px 10px $color-dark, 6px 6px 10px $color-dark;
+    }
+    &__button {
+        width: 234px;
+        height: 48px;
+        background: $color-app-color;
+        border-radius: 30px;
+        border: none;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-text;
+        text-align: center;
+        transition: all 0.5s;
+        box-shadow: 16px 16px 10px $color-dark, 6px 6px 10px $color-dark;
+        outline: none;
+        transition: all 1s;
+    }
+    &__button:hover {
+        cursor: pointer;
+        box-shadow: 6px 6px 10px $color-dark;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1830px) {
+    .app {
+        padding: 32px;
+        gap: 16px;
+        background-image: url(../images/back-tablet.png);
+    }
+}
+@media screen and (max-width: 1550px) {
+    .app {
+        background-position-y: 95px;
+    }
+}
+@media screen and (max-width: 1235px) {
+    .app {
+        background-position-y: 150px;
+        background-image: url(../images/back-mobile.png);
+    }
+}
+@media screen and (max-width: 955px) {
+    .app {
+        min-height: 500px;
+
+        background-position-y: 332px;
+        background-position-x: right;
+    }
+}
+@media screen and (max-width: 550px) {
+    .app {
+        min-height: 550px;
+
+        background-position-y: bottom;
+        background-position-x: center;
+    
+    &__playerLIstTitle {
+        font-size: 40px;
+    }
+}}
